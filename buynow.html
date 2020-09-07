@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        form {
+            width: 30%;
+            min-width: 200px;
+        }
+
+        #popup {
+            min-width: 500px;
+        }
+
+        #popup>div:nth-child(3) {
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom border-dark">
+            <a href='#' class="navbar-brand">G-Crypto</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="faq.html"><u>FAQ</u></a>
+                    <a class="nav-item nav-link active" href="#"><u>Buy Now!</u></a>
+                    <a class="nav-item nav-link" href="login.html"><u>Logout</u></a>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <main class="container-fluid">
+        <div class="d-flex flex-wrap mt-3">
+            <form class="form p-4 d-flex flex-column align-items-start">
+                <fieldset class="form-group">
+                    <label for="currency">Currency</label>
+                    <select id="currency" class="form-control" name="currency">
+                        <option value="Bitcoin">Bitcoin</option>
+                        <option value="Ethereum">Ethereum</option>
+                        <option value="XRP">XRP</option>
+                        <option value="Tether">Tether</option>
+                        <option value="Bitcoin Cash">Bitcoin Cash</option>
+                        <option value="Litecoin">Litecoin</option>
+                        <option value="EOS">EOS</option>
+                        <option value="Binance Coin">Binance Coin</option>
+                        <option value="Bitcoin SV">Bitcoin SV</option>
+                        <option value="Stellar">Stellar</option>
+                        <option value="Tezos">Tezos</option>
+                        <option value="Cardano">Cardano</option>
+                        <option value="TRON">TRON</option>
+                        <option value="Monero">Monero</option>
+                        <option value="UNUS SED LEO">UNUS SED LEO</option>
+                        <option value="Chainlink">Chainlink</option>
+                        <option value="Cosmos">Cosmos</option>
+                        <option value="Huobi Token">Huobi Token</option>
+                        <option value="NEO">NEO</option>
+                        <option value="IOTA">IOTA</option>
+                        <option value="MINDOL">MINDOL</option>
+                        <option value="Maker">Maker</option>
+                        <option value="USD Coin">USD Coin</option>
+                        <option value="Dash">Dash</option>
+                        <option value="Ethereum Classic">Ethereum Classic</option>
+                        <option value="Ontology">Ontology</option>
+                        <option value="Crypto.com Coin">Crypto.com Coin</option>
+                        <option value="VeChain">VeChain</option>
+                        <option value="HedgeTrade">HedgeTrade</option>
+                        <option value="NEM">NEM</option>
+                        <option value="Dogecoin">Dogecoin</option>
+                        <option value=""></option>
+                    </select>
+                    <div class="text-danger"></div>
+                    <label for="quantity" class="mt-2">Quantity</label>
+                    <input type="text" id="quantity" class="form-control" name="quantity" placeholder="Quantity">
+                    <div class="text-danger"></div>
+                </fieldset>
+                <button type="submit" id="buyNow" class="btn btn-danger mt-2" value="Buy Now">Buy Now</button>
+            </form>
+            <section id="popup" class="p-4">
+                <div class="d-flex justify-content-between align-items-start border border-dark p-1">
+                    <h1>Success!!!</h1>
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="d-flex flex-column align-items-center border border-dark border-top-0 p-1">
+                    <h2>Sample Text</h2>
+                    <button type="button" id="celebrate" class="btn btn-danger mt-2" value="Celebrate">Celebrate!</button>
+                </div>
+                <div class="border border-dark border-top-0"></div>
+            </section>
+        </div>
+    </main>
+    <footer class="bg-light fixed-bottom"></footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <script>
+        $(function() {
+            $(".form").submit(function(event) {
+                event.preventDefault();
+                submitBuy(); //Call submitBuy from scripts.js
+            }); //End submit
+
+            $("#celebrate").click(celebrate); //Call celebrate from scripts.js
+        }); //End ready
+    </script>
+</body>
+
+</html>
